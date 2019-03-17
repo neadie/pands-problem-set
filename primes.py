@@ -5,9 +5,7 @@ Created on Sun Feb  3 21:14:14 2019
 @author: Sinead Frawley
 Question 5
 """
-
-numberImput = input("Please enter a positive integer:")
-integerINput= int(numberImput)
+import Enternumber as En;
 
 def is_prime_number(x):
    while x >=2:
@@ -17,11 +15,17 @@ def is_prime_number(x):
        return True
            
        
+ 
     
-if is_prime_number(integerINput):
-    print("That is a prime.")
-else:
-    print("That is not a prime.")
+def print_is_or_not_prime():
+    if is_prime_number(En.enterint()):
+        print("That is a prime.")
+    else:
+        print("That is not a prime.")
+        
+''' Call print_is_or_not_prime '''
+
+print_is_or_not_prime()
     
 	        
 
