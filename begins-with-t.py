@@ -7,9 +7,15 @@ Question 2
 """
 
 import datetime
-my_date = datetime.datetime.now()
-dayOfTheWeek=my_date.strftime("%A")
-if(dayOfTheWeek.startswith('T')):
-    print("Yes - today begins with a T.")
-else:
-    print("No - today does not begin with a T.")
+    
+def ifDayBeginsWithT():
+    my_date = datetime.datetime.now()
+    dayOfTheWeek=my_date.strftime("%A")
+    if dayOfTheWeek.startswith('T') :
+        print("Yes - today begins with a T.")
+    else:
+        print("No - today does not begin with a T.")
+        
+        
+ifDayBeginsWithT()
+
