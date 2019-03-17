@@ -8,13 +8,22 @@ Question 1
 """
 
 numberImput = input("Please enter a positive integer:")
-integerINput= int(numberImput)
 
-def sumUpTo(nunber):
-    total=1
-    while(nunber > 1):
-        total=total+nunber
-        nunber=nunber-1
-    return total
+try:
+   integerINput= int(numberImput)
+   print("Yes input string is an Integer.")
+   print("Input number value is: ", integerINput)
+except ValueError:
+   print("That's not an int!")
+   print("No.. input string is not an Integer. It's a string")
+
+
+def sumUpTo(number):
+    if number > 0:
+        total=1
+        while(number > 1):
+            total=total+number
+            number=number-1
+        return total
 
 print(sumUpTo(integerINput))
