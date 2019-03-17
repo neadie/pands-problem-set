@@ -11,27 +11,13 @@ Question 7
 
 
 
-
-    
-    
-def enterumber():
-    numberImput = input("Please enter a positive number:")
-    try:
-        integerINput= float(numberImput)
-        print("Yes input string is an Integer.")
-        print("Input number value is: ", integerINput)
-        return integerINput
-    except ValueError:
-        print("That's not an int!")
-        print("No.. input string is not an Integer. It's a string")
-   
-
+import Enternumber as En
 
 def getSquareRoot(number):
     if number > 0:
         square_number = number**(1.0/2)
         print(square_number)
         
-getSquareRoot(enterumber())
+getSquareRoot(En.enterFloat())
         
         

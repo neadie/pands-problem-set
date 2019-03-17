@@ -8,21 +8,20 @@ Question 4
 
 '''https://pynative.com/python-check-user-input-is-number-or-string/ '''
 
-numberImput = input("Please enter a positive integer:")
-try:
-    integerINput= int(numberImput)
-    if integerINput > 0:
-        while integerINput > 1:
-            if integerINput % 2 == 0:
-                integerINput=integerINput/2
+
+import Enternumber as en
+def collatz(number):
+    if number > 0:
+        while number > 1:
+            if number % 2 == 0:
+                number = number /2
             else:
-                integerINput=integerINput*3 + 1
-            print(integerINput)
-except ValueError:
-    print("That's not an int!")
-    print("No.. input string is not an Integer. It's a string")
-    
-        
-        
-    
+                number=number*3+1
+            print(number)
+            
+
+collatz(en.enterint())
+      
+
+   
 

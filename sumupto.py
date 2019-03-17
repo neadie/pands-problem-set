@@ -7,17 +7,8 @@ Created on Sun Feb  3 20:06:07 2019
 Question 1
 """
 
-def enterumber():
-    numberImput = input("Please enter a positive number:")
-    try:
-        integerINput= float(numberImput)
-        print("Yes input string is an Integer.")
-        print("Input number value is: ", integerINput)
-        return integerINput
-    except ValueError:
-        print("That's not an int!")
-        print("No.. input string is not an Integer. It's a string")
 
+import Enternumber as En
 
 def sumUpTo(number):
     if number > 0:
@@ -27,4 +18,4 @@ def sumUpTo(number):
             number=number-1
         return total
 
-print(sumUpTo(enterumber()))
+print(sumUpTo(En.enterFloat()))
