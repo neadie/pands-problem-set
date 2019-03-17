@@ -4,7 +4,7 @@ Created on Sun Mar 17 17:17:11 2019
 
 @author: SineadF
 """
-
+'''Question 10'''
 '''https://stackoverflow.com/questions/36347725/how-can-i-square-every-element-in-an-n-by-n-numpy-array '''
 ''' https://stackoverflow.com/questions/31726643/how-do-i-get-multiple-subplots-in-matplotlib '''
 ''' https://jakevdp.github.io/PythonDataScienceHandbook/04.06-customizing-legends.html ''''
