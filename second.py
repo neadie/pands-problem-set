@@ -4,26 +4,25 @@ Created on Sun Feb  3 22:41:56 2019  reference - https://www.afterhoursprogrammi
 
 @author: SineadF
 """
-
+'''https://www.geeksforgeeks.org/reading-writing-text-files-python/ '''
 '''Question 9 
 
 
 ''' 
 ''' Change working directory in python '''
-import os
 
-def everySecondLine():
-    os.chdir(r'C:\Users\SineadF\Documents\pands-problem-set')
-    cwd = os.getcwd()
-    files = os.listdir(cwd)  # Get all the files in that directory
-    print("Files in '%s': %s" % (cwd, files))
-    print(os.getcwd())
-    f = open(r"test.txt", "r") #opens file with name of "test.txt"
+import sys
+
+def everySecondLine(fileName):
+    f = open(fileName, "r") #opens file with name of "test.txt"
+    '''The r can be ignored if the file is in same directory and address is not being placed. '''
     myList = []
     for line in f:
         myList.append(line)
-'''Close the file '''
-     f.close()
-''' Get every second line from the list '''
+    f.close()
     everySecondLine = myList[::2]
-    print(everySecondLine)
+    print(everySecondLine)    
+
+args = sys.argv[1:]
+print(args[0])
+print(everySecondLine(args[0]))
