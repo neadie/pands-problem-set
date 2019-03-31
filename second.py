@@ -9,7 +9,7 @@ Created on Sun Feb  3 22:41:56 2019  reference - https://www.afterhoursprogrammi
 
 
 ''' 
-''' Change working directory in python '''
+
   
 
 ''' To call this file is second.py " what ever file name you what to call if in same direcory just file name if in another 
